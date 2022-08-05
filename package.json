@@ -9,10 +9,8 @@
   "keywords": [],
   "author": "Martin Jakobsen",
   "license": "ISC",
-  "dependencies": {
-    "eslint": "^8.21.0"
-  },
   "devDependencies": {
+    "eslint": "^8.21.0",
     "jest": "^28.1.3"
   }
 }
