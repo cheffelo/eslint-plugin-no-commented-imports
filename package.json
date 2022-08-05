@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-no-commented-imports",
+  "name": "@lmk-group/eslint-plugin-no-commented-imports",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
