@@ -19,19 +19,20 @@ describe("no-commented-imports", () => {
         code: `
           // import { exec } from "child_process";
         `,
-        errors: [
-          {
-            messageId: "noCommentedImports",
-          },
-        ],
+        errors: 1,
+      },
+      {
+        code: `
+          // import { exec } from "child_process";
+          // import utils from "utils";
+
+          const abc = 123;
+        `,
+        errors: 2,
       },
       {
         code: `/* import { exec } from "child_process"; */`,
-        errors: [
-          {
-            messageId: "noCommentedImports",
-          },
-        ],
+        errors: 1,
       },
     ],
   });

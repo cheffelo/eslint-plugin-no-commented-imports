@@ -11,7 +11,7 @@ module.exports = {
           node.comments.forEach((comment) => {
             if (comment.value.trim().startsWith("import")) {
               context.report({
-                node,
+                loc: comment.loc,
                 messageId: "noCommentedImports",
               });
             }
